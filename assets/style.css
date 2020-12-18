@@ -1,0 +1,75 @@
+* {
+    margin: 30px 50px;
+    padding: 0;
+    background-color:grey;   
+}
+
+#game {
+    width: 1080px;
+    height: 500px;
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 10px 10px 1000px 200px black;
+}
+
+
+#background {
+    width: 200px;
+    height: 100px;
+    background-color: transparent;
+    position: relative;
+    top: 10px;
+    left: 850px;
+    animation: backgrounds 2s infinite linear;
+    background-image: url("cloud.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#character {
+    width: 70px;
+    height: 150px;
+    position: relative;
+    top: 190px;
+    left: 0px;
+    background-image: url("ezgif.com-gif-maker.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat
+}
+
+
+#block {
+    width: 60px;
+    height: 100px;
+    position: relative;
+    top: 60px;
+    left: 970px;
+    animation: block 1s infinite linear;
+    background-color: transparent;
+    background-image: url("obstacle.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.animation{
+    animation: jump 600ms;
+}
+
+@keyframes jump {
+    0%{top: 190px;}
+    50%{top: 40px;}
+    100%{top: 190px;}
+}
+
+@keyframes block {
+    0%{left:970px;}
+    100%{left:-40px;}
+}
+
+@keyframes backgrounds {
+    0%{left:970;}
+    100%{left:-50px;}
+}
